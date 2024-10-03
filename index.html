@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio of Tamim Iqbal</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <header>
-    
+    <header class="w-full h-12 rounded-2xl text-lg">
+        <div class="md:flex justify-around items-center p-2">
+            <h1 class="ml-10">Tamim <span class="text-[#FFD700]">Iqbal</span></h1>
+            <nav>
+                <ul class="md:flex justify-center items-center gap-8 mr-10">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-
+        <section class="banner-container w-[1100px] mx-auto my-8">
+            <div class="md:flex justify-center items-center mt-6 gap-10 pt-2">
+                <div>
+                    <span class="md:text-3xl font-semibold mb-0">Hi I am</span>
+                    <h3 class="text-5xl mt-2  font-bold">Md. Tamim Iqbal</h3>
+                    <p class="md:text-lg font-light my-3 text-[#757575]">Web Development · Leadership · Education</p>
+                    <p class="md:text-sm font-light my-3 text-[#757575]">Collaborate with me to take your business online and boost its growth.</p>
+                    <button class="bg-[#FFD700]">Download Resume</button>
+                </div>
+                <figure>
+                    <img src="images/TamimIqbal.png" alt="Profile" width="200px" height="60px">
+                </figure>
+            </div>
+        </section>
     </main>
 
-    <footer>
-
-
-    </footer>
 </body>
+
 </html>
