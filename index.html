@@ -11,11 +11,19 @@
 </head>
 
 <body>
-    <header class="w-full h-12 rounded-2xl text-lg">
-        <div class="md:flex justify-around items-center p-2">
-            <h1 class="ml-10">Tamim <span class="text-[#FFD700]">Iqbal</span></h1>
+    <header class=" md:w-full h-12 rounded-2xl text-lg">
+        <div class=" md:flex justify-around items-center">
+            <h1 class="ml-10 pt-2">Tamim <span class="text-[#FFD700]">Iqbal</span></h1>
+
+            <div class="w-[100px] relative ml-auto lg:hidden md:hidden cursor-pointer" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="absolute bottom-1 h-6 w-6 text-white" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </div>
+
             <nav>
-                <ul class="md:flex justify-center items-center gap-8 mr-10">
+                <ul class="hidden md:flex justify-center items-center gap-8 mr-10">
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Resume</a></li>
@@ -23,22 +31,31 @@
                     <li><a href="">Contact</a></li>
 
                 </ul>
+                <ul id="mobile-device" class="hidden bg-[#000000] w-[100px] grid ml-auto mr-5 p-2  md:hidden lg:hidden">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="banner-container w-[1100px] mx-auto my-8">
-            <div class="md:flex justify-center items-center mt-6 gap-10 pt-2">
+        <section class="banner-container w-[300] p-1 rounded-xl mt-5 mr-5 ml-5 lg:w-[1100px] mx-auto my-8">
+            <div class="ml-5 md:flex justify-center items-center mt-6 gap-10 pt-2">
                 <div>
-                    <span class="md:text-3xl font-semibold mb-0">Hi I am</span>
-                    <h3 class="text-5xl mt-2  font-bold">Md. Tamim Iqbal</h3>
-                    <p class="md:text-lg font-light my-3 text-[#757575]">Web Development · Leadership · Education</p>
-                    <p class="md:text-sm font-light my-3 text-[#757575]">Collaborate with me to take your business online and boost its growth.</p>
-                    <button class="bg-[#FFD700]">Download Resume</button>
+                    <span class="text-2xl md:text-3xl font-semibold mb-0">Hi I am</span>
+                    <h3 class="text-xl  md:text-5xl mt-2  font-bold">Md. Tamim Iqbal</h3>
+                    <p class="text-sm md:text-lg font-light my-3 text-[#757575]">Web Development · Leadership ·
+                        Education</p>
+                    <p class="text-normal md:text-sm font-light my-3 text-[#757575]">Collaborate with me to take your
+                        business online and boost its growth.</p>
+                    <button class="p-3 bg-[#FFD700]">Download Resume</button>
                 </div>
                 <figure>
-                    <img src="images/TamimIqbal.png" alt="Profile" width="200px" height="60px">
+                    <img src="images/TamimIqbal.png" class="mt-5 mx-auto" alt="Profile" width="200px" height="60px">
                 </figure>
             </div>
         </section>
