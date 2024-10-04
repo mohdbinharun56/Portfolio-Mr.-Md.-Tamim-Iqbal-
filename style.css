@@ -49,3 +49,7 @@ button:hover{
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
+
+html{
+    scroll-behavior: smooth;
+}
