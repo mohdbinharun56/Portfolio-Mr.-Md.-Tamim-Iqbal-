@@ -10,8 +10,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header class=" md:w-full h-12 rounded-2xl text-lg">
+<body class="">
+    <header class=" md:w-full h-12  text-lg" id="header-container">
         <div class=" md:flex justify-around items-center">
             <h1 class="ml-10 pt-2">Tamim <span class="text-[#FFD700]">Iqbal</span></h1>
 
@@ -24,19 +24,19 @@
 
             <nav>
                 <ul class="hidden md:flex justify-center items-center gap-8 mr-10">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Resume</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="" onClick="event.preventDefault(); window.location='#header'">Home</a></li>
+                    <li><a href="" onClick="event.preventDefault(); window.location='#about-section'">About</a></li>
+                    <li><a href="" onClick="event.preventDefault(); window.location='#resume'">Resume</a></li>
+                    <li><a href="" onClick="event.preventDefault(); window.location='#projects'">Projects</a></li>
+                    <li><a href="" onClick="event.preventDefault(); window.location='#contact'">Contact</a></li>
 
                 </ul>
                 <ul id="mobile-device" class="hidden bg-[#000000] w-[100px] grid ml-auto mr-5 p-2  md:hidden lg:hidden">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Resume</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="" onClick="event.preventDefault(); window.location='#header'">Home</a></li>
+                    <li><a href="" onClick="event.preventDefault(); window.location='#about-section'">About</a></li>
+                    <li><a href="" onClick="event.preventDefault(); window.location='#resume'">Resume</a></li>
+                    <li><a href="" onClick="event.preventDefault(); window.location='#projects'">Projects</a></li>
+                    <li><a href="" onClick="event.preventDefault(); window.location='#contact'">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,7 +44,7 @@
 
     <main>
         <!-- <section class="banner-container w-[300] p-1 rounded-xl mr-5 ml-5 lg:w-[1100px] lg:mx-auto my-16"> -->
-        <section class="banner-container shadow-md rounded-xl p-1 mx-5 my-16 mx-auto lg:w-10/12">
+        <section class="banner-container shadow-md rounded-xl p-1 mx-5 my-16 mx-auto lg:w-10/12" id="banner-container">
             <div class="ml-5 md:flex justify-center items-center mt-6 gap-10 pt-2">
                 <div>
                     <span class="text-2xl md:text-3xl font-semibold mb-0">Hi I am</span>
@@ -62,7 +62,7 @@
         </section>
 
         <!-- <section class="w-[300] my-16 bg-white py-12 lg:w-[1100px] lg:mx-auto shadow-md text-center rounded-2xl"> -->
-        <section class="text-center bg-white shadow-md rounded-2xl p-12 my-16 mx-auto w-10/12">
+        <section class="text-center bg-white shadow-md rounded-2xl p-12 my-16 mx-auto w-10/12" id="about-section">
             <h1 class=" text-4xl font-bold text-[#FFD700] mb-4">About Me</h1>
             <P class=" text-sm md:text-lg font-light my-3 text-[#757575] ">Innovative Web Developer and Education
                 Pioneer</P>
@@ -107,7 +107,7 @@
             </div>
         </section>
 
-        <section class="my-20">
+        <section class="my-20" id="skills">
             <div>
                 <h3 class="text-4xl font-bold text-[#FFD700] mb-10 text-center">Skills</h3>
             </div>
@@ -131,64 +131,85 @@
             </div>
         </section>
 
-        <section class="w-10/12 mx-auto py-12">
+        <section class="w-10/12 mx-auto py-12" id="resume">
             <h3 class="text-4xl text-center font-bold text-[#FFD700] mb-4">A summary of My Resume</h3>
             <div class="flex mx-auto gap-24 mt-16">
                 <div>
                     <h3 class="text-[#474747] text-2xl font-bold my-4">My Education</h3>
                     <div class="my-6">
-                        <h3 class="text-[#474747] text-xl font-bold my-4">Master in Computer Engineering</h3>
-                        <p class="text-[#757575] font-semibold my-4">Harvard University / 2015 - 2017</p>
-                        <p class="max-w-[360px] text-[#757575] font-light my-4">List skill/technologies here. You can change the icon above
-                            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
+                        <h3 class="text-[#474747] text-xl font-bold my-4">Diploma in Engineering Computer Technology
+                        </h3>
+                        <p class="text-[#757575] font-semibold mt-4">Ahsanullah Institute of Technical and Vocational
+                            Education and Training</p>
+                        <p class="text-[#757575] text-sm mb-4">Expected Completion: 2024</p>
+                        <p class="max-w-[560px] text-[#757575] font-light my-4">Currently pursuing a Diploma in
+                            Engineering with a focus on Computer Technology at Ahsanullah Institute of Technical and
+                            Vocational Education and Training (AITVET). This comprehensive program equips me with
+                            in-depth knowledge and practical skills in the realm of computer technology, nurturing a
+                            strong technical foundation for my professional endeavors.</p>
+                    </div>
+                    <hr>
+                    <div class="my-6"></div>
+                    <h3 class="text-[#474747] text-xl font-bold my-4">Secondary School Certificate (SSC) in Science</h3>
+                    <p class="text-[#757575] font-semibold mt-4">DGT Secondary School</p>
+                    <p class="text-[#757575] text-sm mb-4">Year of Completion: 2020</p>
+                    <p class="max-w-[560px] text-[#757575] font-light my-4">Completing my Secondary School Certificate
+                        (SSC) in Science from DGT Secondary School under the Jeshore Board provided a foundational
+                        understanding of scientific principles and laid the groundwork for further educational pursuits.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-[#474747] text-2xl font-bold my-4">My Experience</h3>
+                    <div class="my-6">
+                        <h3 class="text-[#474747] text-xl font-bold my-4">Senior Web Developer</h3>
+                        <p class="text-[#757575] font-semibold mt-4">Luxury Sustainable Hotels & Retreats International
+                            Association (LUSH)</p>
+                        <p class="text-[#757575] text-sm mb-4">02/24 - Present</p>
+                        <p class="max-w-[560px] text-[#757575] font-light my-4">In my role as a Senior Web Developer at
+                            Luxury Sustainable Hotels & Retreats International Association (LUSH), I've spearheaded the
+                            development and continuous enhancement of a platform that showcases luxury sustainable
+                            hotels and retreats. My work focuses on integrating sustainable practices and certifications
+                            into the website, elevating the user experience through intuitive design and functionality.
                         </p>
                     </div>
                     <hr>
                     <div class="my-6">
-                        <h3 class="degree">Master in Computer Engineering</h3>
-                        <p class="institute">Harvard University / 2015 - 2017</p>
-                        <p class="description">List skill/technologies here. You can change the icon above
-                            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
-                        </p>
+                        <h3 class="text-[#474747] text-xl font-bold my-4">Technical Manager</h3>
+                        <p class="text-[#757575] font-semibold mt-4">Trusted Electrical Solutions Limited</p>
+                        <p class="text-[#757575] text-sm mb-4">06/23 - 2/24</p>
+                        <p class="max-w-[560px] text-[#757575] font-light my-4">As the Technical Manager at Trusted
+                            Electrical Solutions Limited, I oversee a wide spectrum of electrical services, ensuring
+                            top-notch quality in installations, repairs, and upgrades for both residential and
+                            commercial clients in Auckland. My role involves website creation, management, and technical
+                            oversight to guarantee seamless operations and exceptional service delivery.</p>
                     </div>
                     <hr>
-                    <div class="my-6">
-                        <h3 class="degree">Master in Computer Engineering</h3>
-                        <p class="institute">Harvard University / 2015 - 2017</p>
-                        <p class="description">List skill/technologies here. You can change the icon above
-                            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
-                        </p>
-                    </div>
+                    <div class="my-6"></div>
+                    <h3 class="text-[#474747] text-xl font-bold my-4">WordPress Developer</h3>
+                    <p class="text-[#757575] font-semibold mt-4">Luxury Sustainable Hotels & Retreats International
+                        Association (LUSH)</p>
+                    <p class="text-[#757575] text-sm mb-4">01/23 - 07/23</p>
+                    <p class="max-w-[560px] text-[#757575] font-light my-4">At Luxury Sustainable Hotels & Retreats
+                        International Association (LUSH), my focus as a WordPress Developer was pivotal in crafting and
+                        managing websites for luxury sustainable hotels and retreats. I facilitated the integration of
+                        online courses, marketplace functionalities, and sustainability-driven certifications. My role
+                        contributed to promoting eco-friendly hospitality brands and fostering community engagement
+                        through digital platforms.</p>
                 </div>
-                <div class="experience">
-                    <h3 class="text-[#474747] text-2xl font-bold">My Experience</h3>
-                    <div class="information">
-                        <h3 class="degree">Sr. Font End Developer</h3>
-                        <p class="institute">Apple Inc / 2020 - Current</p>
-                        <p class="description">List skill/technologies here. You can change the icon above 
-                            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="information">
-                        <h3 class="degree">Sr. Font End Developer</h3>
-                        <p class="institute">Apple Inc / 2020 - Current</p>
-                        <p class="description">List skill/technologies here. You can change the icon above 
-                            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="information">
-                        <h3 class="degree">Sr. Font End Developer</h3>
-                        <p class="institute">Apple Inc / 2020 - Current</p>
-                        <p class="description">List skill/technologies here. You can change the icon above 
-                            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
-                        </p>
-                    </div>
-                </div>
+            </div>
+            </div>
             </div>
             <div>
                 <button class="p-3 font-semibold">Download Resume</button>
+            </div>
+        </section>
+
+
+        <section>
+            <h1>Projects</h1>
+            <div>
+
             </div>
         </section>
     </main>
@@ -196,3 +217,31 @@
 </body>
 
 </html>
+
+
+<!-- <div class="experience">
+    <h3 class="text-[#474747] text-2xl font-bold">My Experience</h3>
+    <div class="information">
+        <h3 class="degree">Sr. Font End Developer</h3>
+        <p class="institute">Apple Inc / 2020 - Current</p>
+        <p class="description">List skill/technologies here. You can change the icon above
+            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
+        </p>
+    </div>
+    <hr>
+    <div class="information">
+        <h3 class="degree">Sr. Font End Developer</h3>
+        <p class="institute">Apple Inc / 2020 - Current</p>
+        <p class="description">List skill/technologies here. You can change the icon above
+            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
+        </p>
+    </div>
+    <hr>
+    <div class="information">
+        <h3 class="degree">Sr. Font End Developer</h3>
+        <p class="institute">Apple Inc / 2020 - Current</p>
+        <p class="description">List skill/technologies here. You can change the icon above
+            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
+        </p>
+    </div>
+</div> -->
