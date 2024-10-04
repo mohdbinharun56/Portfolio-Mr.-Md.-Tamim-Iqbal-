@@ -44,26 +44,26 @@
 
     <main>
         <!-- <section class="banner-container w-[300] p-1 rounded-xl mr-5 ml-5 lg:w-[1100px] lg:mx-auto my-16"> -->
-        <section class="banner-container shadow-md rounded-xl p-1 mx-5 my-16 mx-auto lg:w-10/12" id="banner-container">
-            <div class="ml-5 md:flex justify-center items-center mt-6 gap-10 pt-2">
-                <div>
+        <section class="banner-container min-h-screen p-1  lg:w-full" id="banner-container">
+            <!-- <div class="ml-5 md:flex justify-center items-center mt-6 gap-10 pt-2"> -->
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="mx-auto my-auto">
                     <span class="text-2xl md:text-3xl font-semibold mb-0">Hi I am</span>
                     <h3 class="text-xl  md:text-5xl mt-2  font-bold">Md. Tamim Iqbal</h3>
                     <p class="text-sm md:text-lg font-light my-3 text-[#757575]">Web Development · Leadership ·
                         Education</p>
                     <p class="text-normal md:text-sm font-light my-3 text-[#757575]">Collaborate with me to take your
                         business online and boost its growth.</p>
-                    <button class="p-3 bg-[#FFD700]">Download Resume</button>
+                    <a href="./assets/Tamim_Iqbal_CV.pdf"><button class="p-3 bg-[#FFD700]" download>Download Resume</button></a>
                 </div>
                 <figure>
-                    <img src="images/TamimIqbal.png" class="mt-5 mx-auto" alt="Profile" width="200px" height="60px">
+                    <img src="images/TamimIqbal.png" class="relative top-[168px] mt-5 mx-auto" alt="Profile" width="400px">
                 </figure>
             </div>
         </section>
 
-        <!-- <section class="w-[300] my-16 bg-white py-12 lg:w-[1100px] lg:mx-auto shadow-md text-center rounded-2xl"> -->
-        <section class="text-center bg-white shadow-md rounded-2xl p-12 my-16 mx-auto w-10/12" id="about-section">
-            <h1 class=" text-4xl font-bold text-[#FFD700] mb-4">About Me</h1>
+        <section class="text-center bg-white shadow-md rounded-2xl p-12 my-16 mx-auto w-h-screen" id="about-section">
+            <h1 class=" text-4xl font-bold text-[#FFD700] mb-8">About Me</h1>
             <P class=" text-sm md:text-lg font-light my-3 text-[#757575] ">Innovative Web Developer and Education
                 Pioneer</P>
             <P class="text-lg mx-auto my-4 w-2/3">I am a dedicated and skilled PHP and WordPress Web Developer with
@@ -78,7 +78,7 @@
                 expertise also encompasses Google Analytics, Linux, Generative AI, and the Laravel Framework, ensuring
                 comprehensive and efficient web development solutions.
             </P>
-            <div class="flex gap-4 justify-center items-center mt-6">
+            <!-- <div class="flex gap-4 justify-center items-center mt-6 ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
                     style="cursor: pointer;">
                     <path
@@ -104,7 +104,7 @@
                     <path
                         d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.744.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.775.418-1.305.76-1.605-2.665-.3-5.466-1.334-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23a11.45 11.45 0 0 1 3-.405c1.02.004 2.045.137 3 .405 2.28-1.553 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.435.37.81 1.102.81 2.22 0 1.606-.015 2.897-.015 3.292 0 .315.21.694.825.577C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
                 </svg>
-            </div>
+            </div> -->
         </section>
 
         <section class="my-20" id="skills">
@@ -112,19 +112,19 @@
                 <h3 class="text-4xl font-bold text-[#FFD700] mb-10 text-center">Skills</h3>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 mx-auto w-fit gap-10">
-                <div class="p-8 w-56 h-72 rounded-xl bg-white shadow-xl">
+                <div class="p-8 w-56 h-72 rounded-xl bg-white shadow-xl hover:bg-[#000000] hover:text-white">
                     <img src="images/icons/js.png" alt="" class="mt-4">
                     <h3 class="mt-4 text-lg font-bold">Vanilla JavaScript</h3>
                 </div>
-                <div class="p-8 w-52 h-72 rounded-xl bg-white shadow-xl">
+                <div class="p-8 w-52 h-72 rounded-xl bg-white shadow-xl hover:bg-[#000000] hover:text-white">
                     <img src="images/icons/react.png" alt="" class="mt-4">
                     <h3 class="mt-4 text-lg font-bold">React</h3>
                 </div>
-                <div class="p-8 w-52 h-72 rounded-xl bg-white shadow-xl">
+                <div class="p-8 w-52 h-72 rounded-xl bg-white shadow-xl hover:bg-[#000000] hover:text-white">
                     <img src="images/icons/nodejs.png" alt="" class="mt-4">
                     <h3 class="mt-4 text-lg font-bold">Node.js</h3>
                 </div>
-                <div class="p-8 w-52 h-72 rounded-xl bg-white shadow-xl">
+                <div class="p-8 w-52 h-72 rounded-xl bg-white shadow-xl hover:bg-[#000000] hover:text-white">
                     <img src="images/icons/mongo.png" alt="" class="mt-4">
                     <h3 class="mt-4 text-lg font-bold">MongoDB</h3>
                 </div>
@@ -201,47 +201,101 @@
             </div>
             </div>
             <div>
-                <button class="p-3 font-semibold">Download Resume</button>
+                <a href="/assets/Tamim_Iqbal_CV.pdf"><button class="p-3 font-semibold">Download Resume</button></a>
             </div>
         </section>
 
 
-        <section>
-            <h1>Projects</h1>
-            <div>
+        <section id="projects">
+            <h1 class="text-4xl text-center font-bold text-[#FFD700] my-14">Projects</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-10/12 mx-auto gap-5 my-16">
+                <div class="bg-[#000000dd] shadow-xl text-white p-4  rounded-2xl">
+                    <h1 class="text-xl font-semibold text-[#FFD700]">Luxury Sustainable Hotels & Retreats</h1>
+                    <p class="text-sm font-light mt-2">I led the complete reconstruction of lushia.org, crafting a
+                        dynamic online platform for Luxury
+                        Sustainable Hotels & Retreats International Association (LUSH). The project involved creating an
+                        interactive website that showcased eco-friendly hospitality brands, integrated online courses, a
+                        marketplace, and certifications, emphasizing sustainability and wellness.
+                    </p>
+                </div>
 
+                <div class="bg-[#000000dd] shadow-xl text-white p-4  rounded-2xl">
+                    <h1 class="text-xl font-semibold text-[#FFD700]">Build Trusted Electrical Website</h1>
+                    <p class="text-sm font-light mt-2">As the sole developer behind trustedelectrical.co.nz, I designed
+                        and developed the website for Trusted Electrical Solutions Limited. The site served as a
+                        comprehensive platform showcasing the company's diverse electrical services, offering insights
+                        into new installations, repairs, and maintenance. Additionally, I ensured a seamless user
+                        experience and managed technical aspects to enhance the site's functionality.</p>
+                </div>
+
+                <div class="bg-[#000000dd] shadow-xl text-white p-4  rounded-2xl">
+                    <h1 class="text-xl font-semibold text-[#FFD700]">Instructorium eLearning Platform</h1>
+                    <p class="text-sm font-light mt-2">Being the primary architect of Instructorium.com, I created an
+                        innovative website tailored to the diverse technical and non-technical courses offered by
+                        Instructorium. The platform was designed to facilitate online learning, live sessions, and
+                        offline programs, aiming to foster an interactive learning environment conducive to professional
+                        skill development.</p>
+
+                </div>
+                <div class="bg-[#000000dd] shadow-xl text-white p-4  rounded-2xl">
+                    <h1 class="text-xl font-semibold text-[#FFD700]">Youtiqa Marketing Agency Website</h1>
+                    <p class="text-sm font-light mt-2">As the solo developer for the Youtiqa Marketing Agency website
+                        (youtiqa.com), I meticulously designed and developed the platform to showcase the agency's
+                        comprehensive services and impressive portfolio. The website features a user-friendly interface,
+                        emphasizing Youtiqa's expertise in marketing strategies and their successful projects. My focus
+                        was on creating a visually appealing site that effectively communicates the agency's value
+                        proposition to potential clients.</p>
+
+                </div>
+                <div class="bg-[#000000dd] shadow-xl text-white p-4  rounded-2xl">
+                    <h1 class="text-xl font-semibold text-[#FFD700]">Volts Electric Limited Website</h1>
+                    <p class="text-sm font-light mt-2">I designed and developed the comprehensive website for Volts
+                        Electric Limited (voltselectric.co.nz), showcasing the breadth of electrical services and
+                        expertise offered by the company. The project involved a strategic layout to highlight the
+                        company's extensive portfolio, ensuring a user-friendly experience that promotes engagement. Key
+                        features were integrated to demonstrate Volts Electric Limited's capabilities, from residential
+                        to commercial projects, reinforcing their position as a leading electrical contractor.</p>
+
+                </div>
+                <div class="bg-[#000000dd] shadow-xl text-white p-4  rounded-2xl">
+                    <h1 class="text-xl font-semibold text-[#FFD700]">De Castro Group Website</h1>
+                    <p class="text-sm font-light mt-2">As the sole developer, I built the website for De Castro Group
+                        (decastro.group), a multifaceted platform designed to showcase the diverse services offered by
+                        the company. The site features an elegant design, with a focus on user experience and
+                        engagement, effectively communicating the company's strengths in multiple sectors, including
+                        hospitality, real estate, and consulting.</p>
+
+                </div>
+                <div class="bg-[#000000dd] shadow-xl text-white p-4  rounded-2xl">
+                    <h1 class="text-xl font-semibold text-[#FFD700]">Regenerative Hospitality Institute</h1>
+                    <p class="text-sm font-light mt-2">I developed the website for the Regenerative Hospitality
+                        Institute (lms.decastro.group), focusing on promoting the institute's mission to redefine
+                        hospitality through sustainability and regeneration. The site was built to serve as an
+                        educational resource, providing access to a wealth of knowledge, courses, and certifications
+                        aimed at transforming the hospitality industry.</p>
+
+                </div>
             </div>
         </section>
+
+
+        <section class="min-h-screen bg-black">
+            <div class="text-white p-16">
+                <h1 class="font-bold text-center text-4xl mb-4">Get in touch</h1>
+                <p class="text-center mb-4">Let's work together!</p>
+                <form action="" class="grid gap-4">
+                    <input class="outline-none p-3 w-full bg-black text-white border-2 border-[#FFD700] rounded-xl" type="text" placeholder="Full Name" required>
+                    <input class="outline-none p-3 w-full bg-black text-white border-2 border-[#FFD700] rounded-xl" type="text" placeholder="Email" required>
+                    <input class="outline-none p-3 w-full bg-black text-white border-2 border-[#FFD700] rounded-xl" type="text" placeholder="Phone Number" required>
+                    <input class="outline-none p-3 w-full bg-black text-white border-2 border-[#FFD700] rounded-xl" type="text" placeholder="Message" required>
+                    <button class="bg-[#FFD700] text-xl text-black font-bold p-4 rounded-md  border-2 border-[#000000] hover:bg-white hover:text-black">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        
     </main>
 
 </body>
 
 </html>
-
-
-<!-- <div class="experience">
-    <h3 class="text-[#474747] text-2xl font-bold">My Experience</h3>
-    <div class="information">
-        <h3 class="degree">Sr. Font End Developer</h3>
-        <p class="institute">Apple Inc / 2020 - Current</p>
-        <p class="description">List skill/technologies here. You can change the icon above
-            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
-        </p>
-    </div>
-    <hr>
-    <div class="information">
-        <h3 class="degree">Sr. Font End Developer</h3>
-        <p class="institute">Apple Inc / 2020 - Current</p>
-        <p class="description">List skill/technologies here. You can change the icon above
-            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
-        </p>
-    </div>
-    <hr>
-    <div class="information">
-        <h3 class="degree">Sr. Font End Developer</h3>
-        <p class="institute">Apple Inc / 2020 - Current</p>
-        <p class="description">List skill/technologies here. You can change the icon above
-            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
-        </p>
-    </div>
-</div> -->
